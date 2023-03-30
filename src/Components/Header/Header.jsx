@@ -4,7 +4,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <>
-      <div className="navbar md:w-9/12 mx-auto">
+      <div className="navbar md:w-8/12 mx-auto">
         <div className="flex-1">
           <a className="btn btn-ghost normal-case text-2xl font-bold">
             Knowledge Hunter
@@ -37,7 +37,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <hr className="w-9/12 h-2 mx-auto"/>
+      <hr className="w-8/12 h-2 mx-auto"/>
     </>
   );
 };
