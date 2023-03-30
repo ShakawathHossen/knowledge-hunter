@@ -1,0 +1,56 @@
+[
+    {
+    "id":1,
+    "name":"Maya Angelou",
+    "blogTitle":"10 Common Programming Mistakes and How to Avoid Them",
+    "readTimestamp":4,
+    "publishedDate":"1/1/2023",
+    "authorImage":"https://cdn-icons-png.flaticon.com/512/145/145850.png?w=740&t=st=1680200339~exp=1680200939~hmac=cee290e8ee44402263fb11930730915663b002b45bf0e20b8d3faa9ec73d23b5",
+    "blogImage":"https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?w=740&t=st=1680200012~exp=1680200612~hmac=2b608052f37fdbc6881c8df084e205ce0008e26a1f01a0e6b0b89f39eff2a6e9"
+
+
+},
+    {
+    "id":2,
+    "name":"Ernest Hemingway",
+    "blogTitle":"Exploring Data Science: Techniques and Tools for Analyzing Data",
+    "readTimestamp":6,
+    "publishedDate":"1/1/2412",
+    "authorImage":"https://cdn-icons-png.flaticon.com/512/168/168554.png?w=740&t=st=1680200360~exp=1680200960~hmac=22ea6f07c1b1562783cc5a9b4ed7d19db8470c9788814a90318ee6fc7604e05a",
+    "blogImage":"https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010127.jpg?w=740&t=st=1680200064~exp=1680200664~hmac=618f5e79278264aa99d69fd38b3758c8ed1dcba7be6bd1761153051de77bf3b7"
+
+
+},
+    {
+    "id":3,
+    "name":"J.K. Rowling",
+    "blogTitle":"The Future of Programming: Trends and Predictions",
+    "readTimestamp":88,
+    "publishedDate":"1/1/2742",
+    "authorImage":"https://cdn-icons-png.flaticon.com/512/146/146021.png?w=740&t=st=1680200353~exp=1680200953~hmac=7d460c4877aaf1186f9a85ade142dc40d4c9a47d3f4ff180a4508c36cec70435",
+    "blogImage":"https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010140.jpg?w=740&t=st=1680200091~exp=1680200691~hmac=20b0ec680de955c9532fb4cf6debceb14ec420bea0f911233385870051dceca1"
+
+
+},
+    {
+    "id":4,
+    "name":"Toni Morrison",
+    "blogTitle":"Creating Your First Mobile App: An Overview of iOS and Android Development",
+    "readTimestamp":7,
+    "publishedDate":"1/1/6234",
+    "authorImage":"https://img.freepik.com/free-icon/injury_318-338280.jpg?t=st=1680200351~exp=1680200951~hmac=0a92634b6eaa86f2c50e3f4113f0995783e7f61e72a4d58139b86b32f96de305",
+    "blogImage":"https://img.freepik.com/free-photo/programming-background-collage_23-2149901789.jpg?w=740&t=st=1680200106~exp=1680200706~hmac=27d39eb8246f36529523406b48a11e6ca77c3cd25cb4add6b77b7a5ce37139fe"
+
+
+},
+    {
+    "id":5,
+    "name":"Stephen King",
+    "blogTitle":"10 Tips for Writing Clean and Efficient Code",
+    "readTimestamp":4,
+    "publishedDate":"1/1/1821",
+    "authorImage":"https://cdn-icons-png.flaticon.com/512/146/146025.png?w=740&t=st=1680200349~exp=1680200949~hmac=118e9376329fb8e8522762418a158b69a5401b78cebaba67ddeabfa658563dfe",
+    "blogImage":"https://img.freepik.com/free-vector/robot-human_53876-90440.jpg?w=740&t=st=1680200164~exp=1680200764~hmac=52106a5fdfd86dc9ee5797afb8b75f706f0b80cfc9692d4d865f9a4f91fea88d"
+
+}
+]
