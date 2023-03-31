@@ -1,0 +1,17 @@
+.blog-container{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.time-count{
+    background-color: #6047ec1e;
+    border: 1px solid #6047EC;
+    color:#6047EC;
+    border-radius: 5px;
+}
+@media screen and (max-width:576px) {
+    .blog-container{
+        display: grid;
+        grid-template-columns:repeat(1,1fr)
+    }
+    
+}

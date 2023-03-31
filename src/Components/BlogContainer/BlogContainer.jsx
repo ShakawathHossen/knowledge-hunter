@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './BlogContainer.css'
 import Blog from '../Blog/Blog';
 import { toast } from 'react-toastify';
 import Bookmark from '../Bookmark/Bookmark';
@@ -24,7 +25,6 @@ const BlogContainer = () => {
 
         }
         else {
-
             const newBookmark = [...bookmark, blog];
             setBookmark(newBookmark);
             toast.success("Bookmark Added Successfully!");
@@ -33,7 +33,7 @@ const BlogContainer = () => {
     }
     // bookmark handle 
     // read time handle 
-    const markAsRead = (readTime) => {
+    const markAsRead = (readTime) => {s
         setTotalReadTime(prevTotalReadTime => prevTotalReadTime + readTime);
     }
 
@@ -43,27 +43,30 @@ const BlogContainer = () => {
 
     // sweet toast 
     return (
-        <div className='md:w-10/12 mx-auto flex justify-between'>
-            <div className='w-80%'>
+        <div className='md:w-10/12 mx-auto blog-container'>
+            <div>
                 {
                     blogs.map(blog => <Blog blog={blog} key={blog.id} updateBookmark={updateBookmark} markAsRead={markAsRead}></Blog>)
                 }
             </div>
             <div>
-                <div className='w-20% my-6'>
-                    <div className="border-2 px-7 py-5 rounded mb-4">
-                        <p className='text-md font-bold text-blue-500'>Spent time on read: {totalReadTime} min</p>
+                <div className='my-6'>
+                    <div className="time-count px-7 py-5 mb-4">
+                        <p className='text-md font-bold text-xl'>Spent time on read: {totalReadTime} min</p>
 
                     </div>
                     <div className="border-2 px-5 py-3 rounded  bg-slate-200">
-                        <p className='text-md pb-5 font-bold'>Bookmarked Blogs : {bookmark.length}</p>
+                        <p className='b-5 font-bold bg-green-100 py-6 px-4 my-4 rounded text-xl'>Bookmarked Blogs : {bookmark.length}</p>
                         {
-                                bookmark.map(blog=><Bookmark blog={blog} key={blog.id}></Bookmark>)
-                            }
+                            bookmark.map(blog => <Bookmark blog={blog} key={blog.id}></Bookmark>)
+                        }
+
                     </div>
-                  
+
+
 
                 </div>
+
 
             </div>
         </div>
