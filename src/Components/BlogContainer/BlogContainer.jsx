@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Blog from '../Blog/Blog';
+import { toast } from 'react-toastify';
+import Bookmark from '../Bookmark/Bookmark';
 
 const BlogContainer = () => {
     const [blogs, setBlogs] = useState([])
     const [bookmark, setBookmark] = useState([])
     const [totalReadTime, setTotalReadTime] = useState(0);
+
 
 
     useEffect(() => {
@@ -15,8 +18,15 @@ const BlogContainer = () => {
     }, [])
     // bookmark handle
     const updateBookmark = (blog) => {
-        const newBookmark = [...bookmark, blog];
-        setBookmark(newBookmark);
+        // if (bookmark.find(blog => blog.id === blog.id)) {
+        //     toast.error("You have already bookmarked this blog!");
+
+        // }
+        // else {
+
+            const newBookmark = [...bookmark, blog];
+            setBookmark(newBookmark);
+        // }
 
     }
     // bookmark handle 
@@ -26,6 +36,10 @@ const BlogContainer = () => {
     }
 
     // read time handle 
+
+    // sweet toast 
+
+    // sweet toast 
     return (
         <div className='md:w-10/12 mx-auto flex justify-between'>
             <div className='w-80%'>
@@ -41,14 +55,11 @@ const BlogContainer = () => {
                     </div>
                     <div className="border-2 px-5 py-3 rounded  bg-slate-200">
                         <p className='text-md pb-5 font-bold'>Bookmarked Blogs : {bookmark.length}</p>
-                        <p className=''>
-                            {bookmark.map(blog => (
-                                <div key={blog.id}>{blog.blogTitle}</div>
-                            ))}
-                        </p>
-
-
+                        {
+                                bookmark.map(blog=><Bookmark blog={blog} key={blog.id}></Bookmark>)
+                            }
                     </div>
+                  
 
                 </div>
 

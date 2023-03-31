@@ -17,7 +17,7 @@ const Blog = (props) => {
                             <img src={authorImage} alt="" width='60px' />
                         </div>
                         <div className='ml-5'>
-                            <p className='text-lg font-bold'>{name}</p>
+                            <p className='text-lg font-bold'>{name}</p> 
                             <p className='text-slate-400 text-sm'>Mar 14 (4 Days ago)</p>
                         </div>
                     </div>
@@ -27,7 +27,6 @@ const Blog = (props) => {
                             <path strokeLinecap="round" strokeLinejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
                         </svg>
                         </span>
-
                     </div>
                 </div>
                 <p className='text-2xl font-bold mb-2'>{blogTitle}</p>
