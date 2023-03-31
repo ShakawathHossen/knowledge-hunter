@@ -4,6 +4,7 @@ import './Blog.css'
 const Blog = (props) => {
     const { id, name, blogTitle, readTimestamp, publishedDate, authorImage, blogImage,postDate } = props.blog;
     const updateBookmark=props.updateBookmark;
+    const markAsRead=props.markAsRead;
     // console.log(props);
   
     return (
@@ -31,7 +32,8 @@ const Blog = (props) => {
                 </div>
                 <p className='text-2xl font-bold mb-2'>{blogTitle}</p>
                 <p className='mb-2 text-slate-500'>#programming #coding</p>
-                <button className='text-start text-sky-600 font-bold'>Mark as read</button>
+                <button className='text-start text-sky-600 font-bold' onClick={() => markAsRead(readTimestamp)}>Mark as read</button>
+
 
             </div>
         </div>
