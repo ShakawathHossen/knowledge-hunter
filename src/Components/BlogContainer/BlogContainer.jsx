@@ -3,6 +3,7 @@ import './BlogContainer.css'
 import Blog from '../Blog/Blog';
 import { toast } from 'react-toastify';
 import Bookmark from '../Bookmark/Bookmark';
+import Question from '../Questions/Question';
 
 const BlogContainer = () => {
     const [blogs, setBlogs] = useState([])
@@ -33,7 +34,7 @@ const BlogContainer = () => {
     }
     // bookmark handle 
     // read time handle 
-    const markAsRead = (readTime) => {s
+    const markAsRead = (readTime) => {
         setTotalReadTime(prevTotalReadTime => prevTotalReadTime + readTime);
     }
 
@@ -61,6 +62,7 @@ const BlogContainer = () => {
                             bookmark.map(blog => <Bookmark blog={blog} key={blog.id}></Bookmark>)
                         }
 
+                    <Question></Question>
                     </div>
 
 
