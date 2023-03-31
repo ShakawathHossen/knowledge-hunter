@@ -18,15 +18,17 @@ const BlogContainer = () => {
     }, [])
     // bookmark handle
     const updateBookmark = (blog) => {
-        // if (bookmark.find(blog => blog.id === blog.id)) {
-        //     toast.error("You have already bookmarked this blog!");
+        if (bookmark.find(item => item.id == blog.id)) {
+            console.log(blog.id);
+            toast.error("You have already bookmarked this blog!");
 
-        // }
-        // else {
+        }
+        else {
 
             const newBookmark = [...bookmark, blog];
             setBookmark(newBookmark);
-        // }
+            toast.success("Bookmark Added Successfully!");
+        }
 
     }
     // bookmark handle 
