@@ -2,3 +2,25 @@
 color: red;
 
 }
+.author-image{
+    width: 60px;
+}
+.author-name{
+    font-size: 24px;
+    font-weight:600;
+}
+.blog-title{
+    font-size: 24px;
+}
+@media screen and (max-width:576px) {
+    .author-image{
+        width: 40px;
+    }
+    .author-name{
+        font-size: 16px;
+        font-weight:600;
+    }
+    .blog-title{
+        font-size: 18px;
+    }
+}

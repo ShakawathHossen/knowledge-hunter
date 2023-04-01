@@ -9,15 +9,15 @@ const Blog = (props) => {
   
     return (
         <div>
-            <div className="card bg-base-100 w-11/12 shadow-lg shadow-indigo-500/40  border-2 p-3 my-6">
+            <div className="card bg-base-100 w-11/12 shadow-lg shadow-indigo-500/40 mx-auto border-2 p-3 my-6">
                 <img className='rounded-xl' src={blogImage} />
                 <div className='flex justify-between items-center'>
                     <div className='flex my-4 items-center'>
                         <div>
-                            <img src={authorImage} alt="" width='60px' />
+                            <img className='author-image' src={authorImage} alt=""/>
                         </div>
                         <div className='ml-5'>
-                            <p className='text-lg font-bold'>{name}</p> 
+                            <p className='author-name ont-bold'>{name}</p> 
                             <p className='text-slate-400 text-sm'>Mar 14 (4 Days ago)</p>
                         </div>
                     </div>
@@ -29,7 +29,7 @@ const Blog = (props) => {
                         </span>
                     </div>
                 </div>
-                <p className='text-2xl font-bold mb-2'>{blogTitle}</p>
+                <p className='blog-title font-bold mb-2'>{blogTitle}</p>
                 <p className='mb-2 text-slate-500'>#programming #coding</p>
                 <button className='text-start text-sky-600 font-bold' onClick={() => markAsRead(readTimestamp)}>Mark as read</button>
 
