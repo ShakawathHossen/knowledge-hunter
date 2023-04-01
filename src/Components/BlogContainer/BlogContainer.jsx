@@ -23,6 +23,8 @@ const BlogContainer = () => {
         if (bookmark.find(item => item.id == blog.id)) {
             console.log(blog.id);
             toast.error("You have already bookmarked this blog!");
+            const newBookmark = [...bookmark, blog];
+            setBookmark(newBookmark);
 
         }
         else {
